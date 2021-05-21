@@ -14,4 +14,4 @@ Max - https://github.com/MaxTCodes
 ## License
 According to the [license file](LICENSE), we're using the `GNU General Public License v3.0`. Please make sure to comply with what it says!
 
-(https://user-images.githubusercontent.com/18745823/119206605-73548100-ba50-11eb-8990-2102cfc05784.mp4)[]
+![vidoe](https://user-images.githubusercontent.com/18745823/119206605-73548100-ba50-11eb-8990-2102cfc05784.mp4)
