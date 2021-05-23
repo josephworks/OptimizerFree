@@ -5,6 +5,10 @@ user = getpass.getuser()
 init(convert=True)
 #os.system('mode 125,40')
 
+if os.name != 'nt':
+    print('This script only supports Windows.')
+    exit(-1)
+
 def isAdmin():
     try:
         is_admin = (os.getuid() == 0)
@@ -15,7 +19,7 @@ def isAdmin():
 
 if not isAdmin():
     ctypes.windll.user32.MessageBoxW(0, 'Please re-launch with administrator if you want everything to work!', 'Permission Error', 0)
-    exit(0)
+    exit(-1)
 
 def menu():
     os.system('cls; clear')
