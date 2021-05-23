@@ -14,7 +14,8 @@ def isAdmin():
 
 
 if not isAdmin():
-    ctypes.windll.user32.MessageBoxW(0, 'Please re-lauch with administrator if you want everything to work!', 'Permission Error', 0)
+    ctypes.windll.user32.MessageBoxW(0, 'Please re-launch with administrator if you want everything to work!', 'Permission Error', 0)
+    exit(0)
 
 def menu():
     os.system('cls; clear')
@@ -35,7 +36,7 @@ def menu():
         sys.stdout.write(line.center(os.get_terminal_size().columns))
     print(Fore.RESET)
 
-    choice = input(f'> ')
+    choice = input('> ')
     if choice == '1':
         time.sleep(0.5)
         for item in [f'C:\\Users\\{user}\\AppData\\LocalLow\\Temp\\', f'C:\\Users\\{user}\\AppData\\Local\\Temp\\']:
